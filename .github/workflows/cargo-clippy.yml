@@ -1,7 +1,6 @@
 name: cargo-clippy
 
 on:
-  push:
   pull_request:
 
 jobs:

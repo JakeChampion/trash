@@ -1,7 +1,6 @@
 name: cargo-test
 
 on:
-  push:
   pull_request:
 
 jobs:
