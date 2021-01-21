@@ -1,7 +1,6 @@
 use glob::glob;
 use std::{env, path::PathBuf};
 
-
 fn main() {
     // Forcibly disable backtraces.
     env::remove_var("RUST_LIB_BACKTRACE");
