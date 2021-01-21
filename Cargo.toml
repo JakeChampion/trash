@@ -8,6 +8,6 @@ edition = "2018"
 
 [dependencies]
 clap = "2.33.3"
+exitcode = "1.1.2"
 glob = "0.3.0"
-structopt = "0.3.21"
 trash = "1.2.0"
