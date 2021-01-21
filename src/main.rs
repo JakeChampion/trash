@@ -1,6 +1,6 @@
 use glob::glob;
 use std::{env, path::PathBuf};
-use trash;
+
 
 fn main() {
     // Forcibly disable backtraces.
