@@ -1,7 +1,6 @@
 name: cargo-udeps
 
 on:
-  push:
   pull_request:
 
 jobs:

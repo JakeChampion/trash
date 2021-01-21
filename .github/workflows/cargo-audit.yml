@@ -1,11 +1,10 @@
 name: cargo-audit
 
 on:
-  push:
+  pull_request:
     paths:
       - "**/Cargo.toml"
       - "**/Cargo.lock"
-  pull_request:
   schedule:
     - cron: "0 0 * * *"
 
