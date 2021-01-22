@@ -94,7 +94,7 @@ dependencies = [
 
 [[package]]
 name = "trash-it"
-version = "1.0.3"
+version = "1.0.4-alpha.0"
 dependencies = [
  "clap",
  "exitcode",
