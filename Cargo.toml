@@ -5,11 +5,14 @@ description = "Trash is a command-line application for moving files and folders 
 edition = "2018"
 keywords = ["cli"]
 license = "MIT"
-name = "trash"
+name = "trash-cli"
 repository = "https://github.com/JakeChampion/trash/"
-version = "0.1.0"
+version = "1.0.0"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[[bin]]
+bench = false
+name = "trash"
+path = "src/main.rs"
 
 [dependencies]
 clap = "2.33.3"
