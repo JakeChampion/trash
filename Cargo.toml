@@ -1,7 +1,12 @@
 [package]
 authors = ["jake champion <me@jakechampion.name>"]
+categories = ["command-line-utilities"]
+description = "Trash is a command-line application for moving files and folders into the trash. A safer alternative to rm."
 edition = "2018"
+keywords = ["cli"]
+license = "MIT"
 name = "trash"
+repository = "https://github.com/JakeChampion/trash/"
 version = "0.1.0"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
