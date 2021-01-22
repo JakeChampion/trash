@@ -1,13 +1,15 @@
 use glob::glob;
 use std::{env, path::PathBuf};
 
+const VERSION: &str = env!("CARGO_PKG_VERSION");
+
 fn main() {
     // Forcibly disable backtraces.
     env::remove_var("RUST_LIB_BACKTRACE");
     env::remove_var("RUST_BACKTRACE");
 
     let mut app = clap::App::new("trash");
-    app = app.version("1.0.0");
+    app = app.version(VERSION);
     app = app.about("Move files and folders to the trash");
     app = app.arg(
         clap::Arg::with_name("files")
