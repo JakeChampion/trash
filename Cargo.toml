@@ -7,7 +7,7 @@ keywords = ["cli"]
 license = "MIT"
 name = "trash-cli"
 repository = "https://github.com/JakeChampion/trash/"
-version = "1.0.0"
+version = "1.0.1"
 
 [[bin]]
 bench = false
