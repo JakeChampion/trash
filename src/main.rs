@@ -32,8 +32,16 @@ fn main() {
         .values_of("files")
         .map_or_else(Vec::new, |v| {
             v.map(::std::convert::From::from)
-                .map(|glob| {
-                    if glob == "." || glob == ".." {
+                .map(|glob: String| {
+                    if glob == "."
+                        || glob == ".."
+                        || glob == "./"
+                        || glob == "../"
+                        || glob.ends_with("/.")
+                        || glob.ends_with("/..")
+                        || glob.ends_with("/./")
+                        || glob.ends_with("/../")
+                    {
                         eprintln!(r#"Trash: "." and ".." may not be moved to the trash"#);
                         std::process::exit(exitcode::USAGE);
                     } else if glob == "/" {
