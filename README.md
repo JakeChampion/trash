@@ -24,10 +24,20 @@ trash src install.sh # move src folder and install.sh file to the trash
 
 ## Install trash
 
-trash works across all major platforms. You can directly install the binary from GitHub:
+### Pre-built binaries
+
+Trash works across all major platforms. You can directly install the binary from GitHub:
 
 ```sh
 curl --proto '=https' --tlsv1.2 -sSf https://raw.githubusercontent.com/ajeetdsouza/trash/master/install.sh | sh
 ```
 
 If you would rather not run a script, you can download the binary from the [Releases](https://github.com/JakeChampion/trash/releases) page and add it to your `PATH` environment variable.
+
+### From source
+
+If you have Rust and Cargo install you can install Trash from source:
+
+```sh
+cargo install trash-it
+```
