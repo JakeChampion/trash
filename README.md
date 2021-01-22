@@ -29,7 +29,7 @@ trash src install.sh # move src folder and install.sh file to the trash
 Trash works across all major platforms. You can directly install the binary from GitHub:
 
 ```sh
-curl --proto '=https' --tlsv1.2 -sSf https://raw.githubusercontent.com/ajeetdsouza/trash/master/install.sh | sh
+curl --proto '=https' --tlsv1.2 -sSf https://raw.githubusercontent.com/JakeChampion/trash/master/install.sh | sh
 ```
 
 If you would rather not run a script, you can download the binary from the [Releases](https://github.com/JakeChampion/trash/releases) page and add it to your `PATH` environment variable.
