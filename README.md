@@ -34,6 +34,15 @@ curl --proto '=https' --tlsv1.2 -sSf https://raw.githubusercontent.com/JakeChamp
 
 If you would rather not run a script, you can download the binary from the [Releases](https://github.com/JakeChampion/trash/releases) page and add it to your `PATH` environment variable.
 
+### Homebrew
+
+If you are on OS X and want to install via [Homebrew](https://brew.sh/):
+
+```sh
+brew tap JakeChampion/trash
+brew install trash
+```
+
 ### From source
 
 If you have Rust and Cargo install you can install Trash from source:
