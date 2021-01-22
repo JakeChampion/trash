@@ -61,7 +61,7 @@ jobs:
         with:
           name: "trash-x86_64-pc-windows-msvc"
           path: "target/x86_64-pc-windows-msvc/release/trash.exe"
-          
+
   release-upload:
     needs:
       - build-linux
@@ -119,6 +119,14 @@ jobs:
           asset_path: "trash-x86_64-apple-darwin/trash"
           asset_name: "trash-x86_64-apple-darwin"
           asset_content_type: application/octet-stream
+
+      - run: ./scripts/create-forumla
+        env:
+          VERSION: ${{ github.ref }}
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Update homebrew formula
+          branch: master
 
       - uses: actions/upload-release-asset@v1
         env:
