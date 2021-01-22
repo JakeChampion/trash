@@ -9,6 +9,8 @@ Move files and folders to the trash
 - [Introduction](#introduction)
 - [Examples](#examples)
 - [Install trash](#install-trash)
+  - [Pre-built binaries](#pre-built-binaries)
+  - [From source](#from-source)
 
 ## Introduction
 
@@ -33,15 +35,6 @@ curl --proto '=https' --tlsv1.2 -sSf https://raw.githubusercontent.com/JakeChamp
 ```
 
 If you would rather not run a script, you can download the binary from the [Releases](https://github.com/JakeChampion/trash/releases) page and add it to your `PATH` environment variable.
-
-### Homebrew
-
-If you are on OS X and want to install via [Homebrew](https://brew.sh/):
-
-```sh
-brew tap JakeChampion/trash
-brew install trash
-```
 
 ### From source
 
