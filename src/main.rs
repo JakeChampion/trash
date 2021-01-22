@@ -36,6 +36,9 @@ fn main() {
                     if glob == "." || glob == ".." {
                         eprintln!(r#"Trash: "." and ".." may not be moved to the trash"#);
                         std::process::exit(exitcode::USAGE);
+                    } else if glob == "/" {
+                        eprintln!(r#"Trash: "/" may not be moved to the trash"#);
+                        std::process::exit(exitcode::USAGE);
                     } else {
                         glob
                     }
