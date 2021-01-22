@@ -120,7 +120,7 @@ jobs:
           asset_name: "trash-x86_64-apple-darwin"
           asset_content_type: application/octet-stream
 
-      - run: ./scripts/create-forumla
+      - run: ./scripts/create-formula
         env:
           VERSION: ${{ github.ref }}
       - uses: stefanzweifel/git-auto-commit-action@v4
