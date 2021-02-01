@@ -1,8 +1,5 @@
 # ![trash](logo.svg)
 
-<!-- omit in toc -->
-# trash
-
 Move files and folders to the trash
 
 <!-- omit in toc -->
