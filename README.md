@@ -1,3 +1,5 @@
+# ![trash](logo.svg)
+
 <!-- omit in toc -->
 # trash
 
